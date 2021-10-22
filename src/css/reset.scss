@@ -1,0 +1,76 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.dcf-overflow-x-auto{
+    outline: none;
+}
+#exampleModal {
+    z-index: 99999999999;
+}
+a,.slick-slide,button{
+    outline:none !important;
+}
+.swiper-button-next,.swiper-button-prev{
+    outline:none;
+}
+.discount-banner{
+    transition: .5s;
+    &:hover{
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+input::placeholder {
+font-weight: 100;
+}
+
+.wechat-modal-img{
+    transform: scle(1);
+    animation: scale-animation .5s ease;
+    
+    
+}
+.txt-left{
+    text-align: left !important;
+}
+
+@keyframes scale-animation{
+    0%{
+        transform: scale(0) translate(-50%,-50%);
+   
+        
+    }
+    100%{
+        transform: scale(1) translate(-50%,-50%);
+        
+    }
+}
+#mc_embed_signup{
+    background-color: #272f3c !important;
+}
+#mc_embed_signup form{
+    padding: 0 !important;
+}

@@ -1,0 +1,104 @@
+@import "variables.scss";
+@import "reset.scss";
+
+section.section_content{
+    
+    .container{
+        .row{
+     
+            .col-md-6,.col-md-12{
+                button{
+                    transition: .3s;
+                    padding: .5rem 1rem;
+                    background-color: #2e90d1;
+                    border-radius: 20px;
+                    color: white;
+
+                    &:hover{
+                        box-shadow: 0 6px 15px rgba(0,0,0,.2);
+                        transform: translateY(-7px);
+                        transform: scale(1.02)
+                       
+                    }
+                }
+                
+                
+                h2{
+                    font-size: 22px;
+                    font-weight: 400;
+                    
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #212529;
+                }
+                ul{
+                    li{
+                        font-size: 20px;
+                        color: #333;
+                        font-weight: 400;
+                    }
+                }
+                .img_wrap{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    @include mobile_width{
+                        width: 100%;
+                    }
+                    .img02{
+                        width: 60%;
+                        @include mobile_width{
+                            width: 100%;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        @include mobile_width{
+                            width: 100%;
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                      
+                      
+                        span{
+                            margin-right: 10px;
+                            color: rgb(39, 202, 93);
+                        }
+                    }
+                }
+            }
+            .col-md-12{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: #333;
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.icon-modal{
+    width: 110px ;
+    margin-right: .5rem;
+    transition: .2s;
+    &:hover{
+        box-shadow: 5px 0 10px rgba(0,0,0,.3)
+    }
+    @include mobile_width{
+        width: 80px;
+    }
+  
+}

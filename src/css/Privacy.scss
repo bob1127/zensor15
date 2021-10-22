@@ -1,0 +1,146 @@
+@import "variables.scss";
+@import "reset.scss";
+
+
+p,li{
+    font-size: 18px;
+}
+header{
+    .desktop-img{
+        @include pad_pro_width{
+            display: none;
+        }   
+       
+    }
+    .pad-img{
+        display: none;
+        @include pad_pro_width{
+            display: block;
+        }
+        @include mobile_width{
+            display: none;
+        }
+    }
+    .mobile-img{
+        display: none;
+      
+        @include mobile_width{
+            display: block;
+        }
+    }
+}
+#wrap,#wrapper {
+    opacity: 1;
+    filter: blur(0px);
+    animation-delay: 0.5s;
+    animation: loading 2s;
+
+    @keyframes loading {
+        0% {
+            opacity: 0;
+            filter: blur(8px);
+        }
+
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+}
+
+h2{
+    font-size: 26px !important;
+}
+h5{
+    font-size: 23px !important;
+}
+section.section_content{
+    margin: 3rem 0;
+    @include mobile_width{
+        margin-top: 22vh;
+    }
+    p{
+                    color: #333;
+                    font-weight: 400;
+                }
+                h2{
+                    margin-top: 1.2rem;
+                }
+                h1,h2{
+                    font-size: 26px;
+
+       
+                    
+                } 
+    .container{
+        .row{
+            .privacy-col-12{
+                margin: 0 15px;
+            }
+            .col-md-12{
+                
+                
+                h5{
+                  
+                    @include mobile_width{
+                        font-size: 16px;
+                    }
+                }
+                
+                ul{
+                    li{
+                        color: #333;
+                        font-weight: 200;
+                        text-indent:-.8em;
+                        margin-top: .5rem;
+                    }
+                  
+                }
+                span{
+             
+                    margin-right: 5px;
+
+                }
+              
+            }
+        }
+    }
+}
+.table-wrap{
+    max-width: 750px;
+    @include mobile_width{
+        max-width: 400px;
+        overflow-x: scroll;
+    }
+    table{
+        border: solid 1px rgba(0,0,0,.2);
+        width: 100%;
+      
+        
+        
+        
+    }
+    td,th{
+            border: solid 1px rgba(0,0,0,.2);
+            text-align: center;
+            padding: .2rem .5rem;
+            img{
+                width: 65px;
+            }
+    
+        }
+    th{
+        background-color: #2e90d1;
+        color: white;
+        text-align: center;
+    ;
+        
+    }
+    
+}
+ul{
+    // width: 100%;
+    li{
+        // margin: 10px 0;
+    }
+}
