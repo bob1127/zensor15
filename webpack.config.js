@@ -277,7 +277,11 @@ module.exports = {
             template: './src/ECWP100S.html',
             chunks: ['manifest','vendor','AllProducts']
         }),
- 
+        new HtmlWebpackPlugin({
+            filename: 'video_download.html',
+            template: './src/video_download.html',
+            chunks: ['manifest','vendor','ProductCatagory']
+        }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
             chunkFilename: 'css/[name].chunk.css'
@@ -288,11 +292,7 @@ module.exports = {
             template: './src/Download.html',
             chunks: ['manifest','vendor','ProductCatagory']
         }),
-        new HtmlWebpackPlugin({
-            filename: '../video_download.html',
-            template: './src/video_download.html',
-            chunks: ['manifest','vendor','ProductCatagory']
-        }),
+        
         
        //English version
 

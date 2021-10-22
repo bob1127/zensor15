@@ -1270,15 +1270,18 @@ section.section_video_download{
                         
                         width: 400px;
                         margin: 10px 15px;
+                        @include mobile_width{
+                            width: 368px;
+                        }
                         a{
-        border: solid 1px white;
-        padding: .4rem 1rem;
-        color: white;
-        transition: .3s;
-        margin: 1rem 0;
-        display: inline-block;
-                    
-        &:hover{
+                        border: solid 1px white;
+                        padding: .4rem 1rem;
+                        color: white;
+                        transition: .3s;
+                        margin: 1rem 0;
+                        display: inline-block;
+                                    
+                        &:hover{
                         cursor:pointer;
                         background-color: white;
                         color:#333;
@@ -1296,6 +1299,9 @@ section.section_video_download{
                         video{
                             object-fit:cover;
                             height: 225px;
+                            @include mobile_width{
+                                height: 207px;
+                            }
 
                         }
                         span{
