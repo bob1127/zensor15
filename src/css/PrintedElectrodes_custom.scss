@@ -1,12 +1,19 @@
 @import "variables.scss";
 @import "reset.scss";
+header{
+    @include mobile_width{
+        margin-top: 95px;
+    }
+}
 
-section.section_content{
+section.section_content,section.section_SPE{
     
     .container{
         .row{
+         
      
             .col-md-6,.col-md-12{
+                
                 button{
                     transition: .3s;
                     padding: .5rem 1rem;
@@ -24,20 +31,23 @@ section.section_content{
                 
                 
                 h2{
-                    font-size: 22px;
+                    font-size: 30px;
                     font-weight: 400;
                     
                 }
+                h5{
+                    font-size: 25px;
+                }
                 p{
                     font-size: 20px;
-                    font-weight: 400;
+                    font-weight: 200;
                     color: #212529;
                 }
                 ul{
                     li{
                         font-size: 20px;
                         color: #333;
-                        font-weight: 400;
+                        font-weight: 200;
                     }
                 }
                 .img_wrap{

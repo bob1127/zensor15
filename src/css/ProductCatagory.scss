@@ -1163,6 +1163,9 @@ section.section_video_download{
             
             .bottom-text{
                 .text-area{
+                    @include mobile_width{
+                        margin-top: 20px;
+                    }
                     h1,h2{
                         color:white;
                     }

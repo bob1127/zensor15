@@ -43,6 +43,13 @@ $pad_pro_media: 1100px;
 .none{
   display: none;
 }
+#mc-embedded-subscribe{
+padding: 0 !important;
+ 
+}
+#mc_embed_signup .mc-field-group{
+  width: 100%;
+}
 #mobile_buttons {
   left: 0;
   width: 100%;
@@ -403,7 +410,7 @@ footer {
           align-items: flex-start;
           flex-direction: column;
 
-          fieldset {
+          fieldset,#mc-embedded-subscribe-form {
             width: 100%;
             @include pad_width{
               margin-top: 2rem;

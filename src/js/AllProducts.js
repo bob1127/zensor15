@@ -10,6 +10,28 @@ import { WOW } from 'wowjs';
 
 
 import LazyLoad from "vanilla-lazyload";
+//modal close video stop
+ $("#myModal").on('hidden.bs.modal', function (e) {
+        $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+    });
+ 
+  $('#videoModal01').on('hide.bs.modal', function(e) {
+    this.querySelector('video').pause();
+})
+
+  $('#videoModal02').on('hide.bs.modal', function(e) {
+    this.querySelector('video').pause();
+})
+
+  $('#videoModal03').on('hide.bs.modal', function(e) {
+    this.querySelector('video').pause();
+})
+ $('#videoModal04').on('hide.bs.modal', function(e) {
+    this.querySelector('video').pause();
+})
+ $('#videoModal05').on('hide.bs.modal', function(e) {
+    this.querySelector('video').pause();
+})
 
 $('th').attr('scope','no-center')
 
