@@ -1393,7 +1393,7 @@
             </div>
             <div class="col-xl-4 ">
               <div id="mc_embed_signup">
-                 <form style='background-color: #272f3c;' action="https://zensor.us5.list-manage.com/subscribe/post?u=8003083e0fe5051b6f39c396a&amp;id=3164edde19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate >
+                <form action="https://zensor.us5.list-manage.com/subscribe/post?u=8003083e0fe5051b6f39c396a&amp;id=3164edde19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               
 
                     <p class='white'>想要收到更多關於電化學工作的靈感麼？</p>
@@ -1401,24 +1401,10 @@
                     <p class='white'>訂閱我們的電子報</p>
 
                        <div class="mc-field-group">
-                              <!-- <label for="mce-MMERGE">姓名(service)<span style='color: red'>*</span></label>
-                              <input type="text" value="" name="MMERGE" class="" id="mce-MMERGE">
-                            </div> -->
-                            <!-- <div class="mc-field-group">
-                              <label for="mce-MMERGE6">姓名(contactUs) </label>
-                              <input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
-                            </div>
+                            
                             <div class="mc-field-group">
-                              <label for="mce-MMERGE7">姓名(customized) </label>
-                              <input type="text" value="" name="MMERGE7" class="" id="mce-MMERGE7">
-                            </div>
-                            <div class="mc-field-group">
-                              <label for="mce-MMERGE9">姓名(Plan) </label>
-                              <input type="text" value="" name="MMERGE9" class="" id="mce-MMERGE9">
-                            </div> -->
-                            <div class="mc-field-group">
-                              <label for="mce-MMERGE1" class='white'>姓名:</label>
-                              <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1">
+                              <label for="mce-MMERGE10" class='white'>姓名(footer) </label>
+                              <input type="text" value="" name="MMERGE10" class="" id="mce-MMERGE10">
                             </div>
                             <div class="mc-field-group">
                                   <label for="mce-EMAIL" class='white'>信箱:
@@ -1454,6 +1440,25 @@
 
 
     "></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[5]='MMERGE';ftypes[5]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[1]='MMERGE1';ftypes[1]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[11]='MMERGE11';ftypes[11]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script>
+    $(function() {
+  $(".ad-wrap").stick_in_parent({
+    offset_top: 10
+  });
+});
+
+
+var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.copy-link').on('click', function() {
+  alert('copy sucessful')
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+
+})
     <script>
     $(function() {
   $(".ad-wrap").stick_in_parent({
